@@ -20,12 +20,13 @@ def fig3():
 
     df=df.replace({'Management':{'PP':'RS','Pe':'PU','Fe':'FE'}})
     df=df.replace({'IS':{'Experts':'EXP','FFF':'FP','PPE':'PE'}})
-    fig,ax=plt.subplots(figsize=(8,7),nrows=1,ncols=1)
+    fig,ax=plt.subplots(figsize=(8,4),nrows=1,ncols=1)
     df=df.pivot(index='IS', columns='Management', values='Count').reset_index()
     df.set_index('IS').plot(kind='bar', stacked=True,ax=ax)
     ax.set_ylabel('Count',fontsize=10)
     ax.set_xlabel('Information source',fontsize=10)
-    
-    fig.savefig('../fig/fig3.png',dpi=300)
+    plt.tight_layout(pad=0)
+    ax.tick_params(axis='both', which='major', labelsize=10)
+    fig.savefig('../fig/fig3.png',dpi=300,pad_inches=0.0)
 if __name__=='__main__':
     fig3()
