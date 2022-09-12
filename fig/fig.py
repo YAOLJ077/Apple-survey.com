@@ -5,3 +5,6 @@ import pandas as pd
 
 def fig2():
     pass
+
+if __name__=='__main__':
+    passs
