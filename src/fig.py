@@ -30,3 +30,5 @@ def fig3():
     fig.savefig('../fig/fig3.png',dpi=300,pad_inches=0.0)
 if __name__=='__main__':
     fig3()
+    plt.show()
+
