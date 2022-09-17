@@ -1,7 +1,7 @@
 import pandas as pd
 def adoption_percent():
 
-    df_RS = pd.read_csv("../data/RS_adoption.csv")
+    df_RS = pd.read_csv("F:/Python/Apple-survey.com/data/RS_adoption.csv")
     a = df_RS.sum()
     b = df_RS.count()
     p = a / b * 100
