@@ -3,7 +3,7 @@ import scipy.stats as stats
 import numpy as np
 # the difference of gross margin of adopt dwarfing cultivation or non-adopt
 
-df = pd.read_csv("F:/Python/Apple-survey.com/data/adoption_difference.csv")
+df = pd.read_csv("../data/adoption_difference.csv")
 adop=list(df['Gross_Margin'].iloc[np.where(df['Rootstock'] == 1)])
 non_adop=list(df['Gross_Margin'].iloc[np.where(df['Rootstock'] == 0)])
 
