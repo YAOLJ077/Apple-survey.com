@@ -1,4 +1,4 @@
-Gross_Margin,RS_MM,RS_FC,RS_ATESC,RS_ACD,RS_EXP,RS_FP,RS_PE,Sex,Age,Edu,Area,Training,T-Age,Identity,Farm Cooperative
+Gross_Margin,RS_MM,RS_FC,RS_ATESC,RS_ACD,RS_EXP,RS_FP,RS_PE,Sex,Age,Edu,Area,Training,T_Age,Identity,Farm_Cooperative
 0.835714286,0,0,0,0,0,1,1,1,40,12,7.5,0,10,0,1
 0.883333333,0,0,0,1,0,1,0,0,40,9,2.5,0,10,1,0
 0.75,0,0,1,1,0,1,0,0,58,12,2.5,0,10,1,0
