@@ -2,7 +2,7 @@ library("forestplot")
 library("grid")
 library("magrittr")
 library("checkmate")
-forest_data<-read.csv(("F:/R/Data_bank/Forest_ST.csv"),header=T)
+forest_data<-read.csv(("../data/Forest_ST.csv"),header=T)
 #head(forest_data)
 #View(forest_data)
 forestplot(as.matrix(forest_data[,1:4]),mean=forest_data$OR,lower=forest_data$lower,upper=forest_data$upper,
