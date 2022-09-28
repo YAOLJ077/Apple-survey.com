@@ -17,3 +17,4 @@ forestplot(as.matrix(forest_data[,1:4]),mean=forest_data$OR,lower=forest_data$lo
            #hrzl_lines=gpar(col="#444444"),
            title="The role of information source on technology adoption",graph.pos=4,
            ci.vertices=TRUE,ci.vertices.height = 0.2,clip=c(0,3.0))
+

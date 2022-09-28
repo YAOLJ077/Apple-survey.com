@@ -1,8 +1,9 @@
 library(ggplot2)
 library(wesanderson)
-df=read.csv("F:/Apple/Final/fao_data.csv")
+df=read.csv("/Users/zhouliyun/Desktop/apple/anaysis_data/fao_data.csv")
+ylabs <- expression(paste("Yield (", kg^-1,"ha)"))
 p0<-ggplot(data=df, aes(x=Year, y=Value, color=Country, shape=Country))+
-  geom_point(size = 3.5)+geom_line(size = 1.5)+labs(x="Year",y="Kg per hectare")+ 
+  geom_point(size = 3.5)+geom_line(size = 1.5)+labs(x="",y=ylabs)+ 
   theme_bw()+theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank())+
   theme(axis.text = element_text(size = 12),axis.title = element_text(size = 16, color = 'black'),
         legend.title = element_text(size = 14, color = 'black'),legend.text = element_text(size=12))+
