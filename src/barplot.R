@@ -1,9 +1,9 @@
 library(ggplot2)
 library(wesanderson)
-data <- read.csv(("../data/pie.csv"),header = T)
-data$Type_number <- as.character(data$Type_number)
-ggplot(data,mapping = aes(Production_stage,Count,fill=Type_number))+
-  geom_bar(stat='identity',position='fill') +labs(x = 'Production stage',y = 'Ratio') +
+data <- read.csv(("../data/barplot.csv"),header = T)
+data$No..of.information.sources <- as.character(data$No..of.information.sources)
+ggplot(data,mapping = aes(Production_stage,Count,fill=No..of.information.sources))+
+  geom_bar(stat='identity',position='fill') +labs(x = 'Production stage',y = 'Ratio',fill = "No. of infotmation sources") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+ theme_bw() + 
   theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank())+
   theme(axis.text = element_text(size = 12),axis.title = element_text(size = 14, color = 'black'),
