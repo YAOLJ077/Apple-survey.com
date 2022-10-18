@@ -1,5 +1,5 @@
-Information source,B,P-value,Odds Ratio,OR,lower,upper
-Information source,B,P-value,Odds Ratio,,,
+Information Source,B,p-value,Odds Ratio,OR,lower,upper
+Information Source,B,p-value,Odds Ratio,,,
 ACD,0.200 ,0.483 ,1.222(0.698-2.137),1.221729,0.698355,2.137342
 ATESC,-0.037 ,0.923 ,0.964(0.457-2.032),0.96388,0.457136,2.032358
 EXP,-0.593 ,0.055 ,0.552(0.301-1.014),0.552405,0.300965,1.013908
